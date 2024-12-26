@@ -1,6 +1,6 @@
 # Frontend Mentor - Four card feature section solution
 
-This is a solution to the [Four card feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
+This is a solution to the [Four cards feature section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK).
 
 ## Table of contents
 
@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Checkout the Solution on Frontend Mentor Page](https://www.frontendmentor.io/solutions/four-cards-feature-section-using-css-grid-FOX8zApPXR)
+- Live Site URL: [Checkout the live site here](https://fourcards-featuresections.netlify.app/)
 
 ## My process
 
