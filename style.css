@@ -1,0 +1,162 @@
+:root {
+  --fw-light: 200;
+  --fw-normal: 400;
+  --fw-bold: 600;
+
+  --fs-small: 0.9375rem;
+  --fs-normal: 1.125rem;
+  --fs-big: 1.5rem;
+  --fs-large: 2.375rem;
+
+  --clr-red: hsl(0, 78%, 62%);
+  --clr-cyan: hsl(180, 62%, 55%);
+  --clr-orange: hsl(34, 97%, 64%);
+  --clr-blue: hsl(212, 86%, 64%);
+
+  --clr-darkblue: hsl(234, 12%, 34%);
+  --clr-grayishblue: hsl(229, 6%, 66%);
+  --clr-lightgray: hsl(0, 0%, 98%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: var(--fw-normal);
+  font-size: var(--fs-small);
+  line-height: 1.7;
+  color: var(--clr-grayishblue);
+  padding-block-end: 5rem;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-darkblue);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: var(--fw-light);
+}
+
+h1 span {
+  font-weight: var(--fw-bold);
+}
+
+h2 {
+  font-size: var(--fs-big);
+}
+
+.wrapper {
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-block: 4rem;
+}
+
+header p {
+  font-size: var(--fs-normal);
+  margin-top: 2rem;
+}
+
+.cards-layout {
+  display: grid;
+  gap: 2rem;
+  grid-auto-columns: 1fr;
+}
+
+.card {
+  padding: 2rem;
+  border-top: 0.325rem solid;
+  border-radius: 0.325rem;
+  box-shadow: 0 1rem 1.5rem -0.5rem hsla(234, 12%, 34%, 0.15);
+}
+
+.card:nth-child(1) {
+  border-color: var(--clr-cyan);
+}
+
+.card:nth-child(2) {
+  border-color: var(--clr-red);
+}
+
+.card:nth-child(3) {
+  border-color: var(--clr-orange);
+}
+
+.card:nth-child(4) {
+  border-color: var(--clr-blue);
+}
+
+.card p {
+  margin-top: 1rem;
+}
+
+.card-img {
+  margin-top: 2rem;
+  margin-left: auto;
+}
+
+.attribution {
+  font-size: 0.8rem;
+  text-align: center;
+  padding-block: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 800px) {
+  h1 {
+    font-size: var(--fs-large);
+  }
+
+  .inner-wrapper {
+    max-width: 650px;
+  }
+
+  .cards-layout {
+    grid-template-areas:
+      ".. two .."
+      "one two four"
+      "one three four"
+      ".. three ..";
+  }
+
+  .card:nth-child(1) {
+    grid-area: one;
+  }
+
+  .card:nth-child(2) {
+    grid-area: two;
+  }
+
+  .card:nth-child(3) {
+    grid-area: three;
+  }
+
+  .card:nth-child(4) {
+    grid-area: four;
+  }
+}
